@@ -107,8 +107,8 @@ export default class LinkEditComponent extends React.Component {
         }}
       >
         <a href={this.props.url} title={this.props.url} target="_blank" rel="noopener noreferrer">{url}</a>
-        <button className="md-editor-toolbar-unlink-button" onClick={this.removeLink}>Unlink</button>
-        <button className="md-editor-toolbar-edit-button" onClick={this.editLink}>Edit</button>
+        <button className="md-editor-toolbar-unlink-button" onClick={this.removeLink}>リンク解除</button>
+        <button className="md-editor-toolbar-edit-button" onClick={this.editLink}>編集</button>
       </div>
     );
   }

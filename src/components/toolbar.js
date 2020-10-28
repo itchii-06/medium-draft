@@ -214,7 +214,7 @@ export default class Toolbar extends React.Component {
               className="md-url-input"
               onKeyDown={this.onKeyDown}
               onChange={this.onChange}
-              placeholder="Press ENTER or ESC"
+              placeholder="ENTER or ESCキーを押して入力"
               value={urlInputValue}
             />
           </div>
@@ -223,7 +223,7 @@ export default class Toolbar extends React.Component {
     }
     let hasHyperLink = false;
     let hyperlinkLabel = '#';
-    let hyperlinkDescription = 'Add a link';
+    let hyperlinkDescription = 'リンクを追加';
     for (let cnt = 0; cnt < inlineButtons.length; cnt++) {
       if (inlineButtons[cnt].style === HYPERLINK) {
         hasHyperLink = true;
@@ -272,10 +272,10 @@ export default class Toolbar extends React.Component {
 
 export const BLOCK_BUTTONS = [
   {
-    label: 'H3',
+    label: 'T',
     style: 'header-three',
     icon: 'header',
-    description: 'Heading 3',
+    description: '見出し',
   },
   {
     label: (
@@ -295,24 +295,7 @@ export const BLOCK_BUTTONS = [
     ),
     style: 'blockquote',
     icon: 'quote-right',
-    description: 'Blockquote',
-  },
-  {
-    label: 'UL',
-    style: 'unordered-list-item',
-    icon: 'list-ul',
-    description: 'Unordered List',
-  },
-  {
-    label: 'OL',
-    style: 'ordered-list-item',
-    icon: 'list-ol',
-    description: 'Ordered List',
-  },
-  {
-    label: '✓',
-    style: 'todo',
-    description: 'Todo List',
+    description: '引用',
   },
 ];
 
@@ -321,24 +304,13 @@ export const INLINE_BUTTONS = [
     label: 'B',
     style: 'BOLD',
     icon: 'bold',
-    description: 'Bold',
+    description: '強調',
   },
   {
-    label: 'I',
-    style: 'ITALIC',
-    icon: 'italic',
-    description: 'Italic',
-  },
-  {
-    label: 'U',
-    style: 'UNDERLINE',
-    icon: 'underline',
-    description: 'Underline',
-  },
-  {
-    label: 'Hi',
-    style: 'HIGHLIGHT',
-    description: 'Highlight selection',
+    label: 'code',
+    style: 'CODE',
+    icon: 'code',
+    description: 'コード',
   },
   {
     label: (
@@ -361,6 +333,6 @@ export const INLINE_BUTTONS = [
     ),
     style: HYPERLINK,
     icon: 'link',
-    description: 'Add a link',
+    description: 'リンク',
   },
 ];

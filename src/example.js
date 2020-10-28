@@ -198,7 +198,7 @@ class EmbedSideButton extends React.Component {
       <button
         className="md-sb-button md-sb-img-button"
         type="button"
-        title="Add an Embed"
+        title="埋め込み追加"
         onClick={this.onClick}
       >
         <i className="fa fa-code" />

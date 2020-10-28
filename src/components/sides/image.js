@@ -54,7 +54,7 @@ export default class ImageButton extends React.Component {
         className="md-sb-button md-sb-img-button"
         type="button"
         onClick={this.onClick}
-        title="Add an Image"
+        title="画像追加"
       >
         <i className="fa fa-image" />
         <input
