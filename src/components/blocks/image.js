@@ -30,27 +30,14 @@ class ImageBlock extends React.Component {
   };
 
   render() {
-    const { blockProps, block } = this.props;
+    const { block } = this.props;
     const data = block.getData();
     const src = data.get('src');
-    const showPlaceholder = block.getLength() === 0 && blockProps.placeholder;
 
     if (src !== null) {
-      const extraProps = {};
-
-      if (showPlaceholder) {
-        extraProps['data-placeholder'] = blockProps.placeholder;
-        extraProps.className = 'md-block-image-caption--empty';
-      }
-
       return (
-        <div>
-          <div className="md-block-image-inner-container" onClick={this.focusBlock}>
-            <img role="presentation" src={src} />
-          </div>
-          <figcaption {...extraProps}>
-            <EditorBlock {...this.props} />
-          </figcaption>
+        <div className="md-block-image-inner-container" onClick={this.focusBlock}>
+          <img role="presentation" src={src} />
         </div>
       );
     }
