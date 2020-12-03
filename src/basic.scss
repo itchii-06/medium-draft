@@ -50,7 +50,7 @@
 
 .md-block-todo {
     margin: 10px 0 10px 0;
-    
+
     input[type=checkbox] {
         float: left;
         position: relative;
@@ -82,18 +82,20 @@
 }
 
 .md-inline-code {
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    margin: 4px 0px;
-    font-size: 0.9em;
-    padding: 1px 3px;
-    color: rgb(85, 85, 85);
-    background-color: rgb(252, 252, 252);
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187);
-    border-image: initial;
-    border-radius: 3px;
-    box-shadow: rgb(187, 187, 187) 0px -1px 0px inset;
+    padding: 36px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    font-family: monospace,SFMono-Regular,Consolas,Menlo,Courier,monospace;
+    line-height: 18px;
+    color: #fff;
+    white-space: pre-wrap;
+    background-color: #282c34!important;
+    font-size: 12px;
+    display: block;
+
+    span {
+        margin: 0!important;
+    }
 }
 
 
